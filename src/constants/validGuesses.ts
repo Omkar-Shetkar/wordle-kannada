@@ -1,5 +1,5 @@
 export const VALID_GUESSES = [
-  'ಅಚಲ',
+'ಅಚಲ',
 'ಅದರ',
 'ಆಸನ ',
 'ಕಣಜ',

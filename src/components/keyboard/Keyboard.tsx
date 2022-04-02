@@ -51,8 +51,6 @@ export const Keyboard = ({
     }
   }, [onEnter, onDelete, onChar])
 
-
-
   return (
     <div>
       <div className="flex justify-center mb-1">
@@ -78,6 +76,9 @@ export const Keyboard = ({
         ))}
       </div>
       <div className="flex justify-center mb-1">
+        <Key width={65.4} value="ENTER" onClick={onClick}>
+          {'ಸ್ವರ'}
+        </Key>
         {['ಪ', 'ಫ', 'ಬ', 'ಭ', 'ಮ', 'ಯ', 'ರ', 'ಲ', 'ವ'].map((key) => (
           <Key
             value={key}
@@ -87,6 +88,9 @@ export const Keyboard = ({
             isRevealing={isRevealing}
           />
         ))}
+        <Key width={65.4} value="ENTER" onClick={onClick}>
+          {'ಗುಣಿತಾಕ್ಷರ'}
+        </Key>
       </div>
       <div className="flex justify-center">
         <Key width={65.4} value="ENTER" onClick={onClick}>
