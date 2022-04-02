@@ -8,63 +8,68 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="ಆಟದ ನಿಯಮಗಳು" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        ಆರು ಪ್ರಯತ್ನಗಳಲ್ಲಿ ಪದವನ್ನು ಊಹಿಸಿ. ಪ್ರತಿ ಊಹೆಯ ನಂತರ, ಚೌಕದ ಬಣ್ಣವು
+        ಬದಲಾಯಿಸುತ್ತದೆ. ಚೌಕದ ಬಣ್ಣ, ಪದಕ್ಕೆ ನಿಮ್ಮ ಊಹೆ ಎಷ್ಟು ಹತ್ತಿರವಾಗಿತ್ತು
+        ಎಂಬುದನ್ನು ತೋರಿಸಲು ಸಹಾಯಕ.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="ವಂ"
           status="correct"
         />
-        <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="ದ" />
+        <Cell value="ನೆ" />
+        <Cell value="ಗ" />
+        <Cell value="ಳು" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        ವಂ ಅಕ್ಷರವು ಪದದಲ್ಲಿ ಇದೆ ಮತ್ತು ಸರಿಯಾದ ಸ್ಥಳದಲ್ಲಿದೆ.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="ಮ" />
+        <Cell value="ಹಾ" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="ಭಾ"
           status="present"
         />
-        <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="ರ" />
+        <Cell value="ತ" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        ಭಾ ಅಕ್ಷರವು ಪದದಲ್ಲಿದೆ ಆದರೆ ತಪ್ಪಾದ ಸ್ಥಳದಲ್ಲಿದೆ.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="ಚ" />
+        <Cell value="ಟು" />
+        <Cell value="ವ" />
+        <Cell
+          isRevealing={true}
+          isCompleted={true}
+          value="ಟಿ"
+          status="absent"
+        />
+        <Cell value="ಕೆ" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        ಟಿ ಅಕ್ಷರವು ಯಾವುದೇ ಸ್ಥಳದಲ್ಲಿ ಪದದಲ್ಲಿಲ್ಲ.
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
+        ಇದು ನಮ್ಮೆಲರ ಪ್ರೀತಿಯ ಪದ ಊಹಿಸುವ ಆಟದ ಮುಕ್ತ ಮೂಲ ಆವೃತ್ತಿಯ ಕನ್ನಡ ಅವತರಣಿಕೆ -{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://github.com/Omkar-Shetkar/wordle-kannada"
           className="underline font-bold"
         >
-          check out the code here
+          ಇಲ್ಲಿ ಕೋಡ್ ಪರಿಶೀಲಿಸಿ
         </a>{' '}
       </p>
     </BaseModal>

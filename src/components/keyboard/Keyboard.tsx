@@ -111,7 +111,7 @@ export const Keyboard = ({
 
   const [showSwaras, setShowSwaras] = useState(false)
   const [showGunitakshara, setShowGunitakshara] = useState(false)
-  const [gunitakshara, setGunitakshara] = useState([] as string[])
+  const [gunitakshara, setGunitakshara] = useState<string[]>([])
 
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
