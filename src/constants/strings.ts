@@ -1,6 +1,6 @@
 export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 
-export const WIN_MESSAGES = ['ಉತ್ತಮ ಕೆಲಸ!', 'ಅದ್ಭುತ', 'ತುಂಬಾ ಒಳ್ಳೆಯದು!']
+export const WIN_MESSAGES = ['ಶಹಭಾಷ್!', 'ಅದ್ಭುತ', 'ಅತಿ ಉತ್ತಮ!']
 export const GAME_COPIED_MESSAGE = 'ಆಟವನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'ಸಾಕಷ್ಟು ಅಕ್ಷರಗಳಿಲ್ಲ'
 export const WORD_NOT_FOUND_MESSAGE = 'ಪದ ಕಂಡುಬಂದಿಲ್ಲ'
@@ -24,4 +24,4 @@ export const SHARE_TEXT = 'ಹಂಚಿಕೊಳ್ಳಿ'
 export const TOTAL_TRIES_TEXT = 'ಒಟ್ಟು ಪ್ರಯತ್ನಗಳು'
 export const SUCCESS_RATE_TEXT = 'ಯಶಸ್ಸಿನ ಪ್ರಮಾಣ'
 export const CURRENT_STREAK_TEXT = 'ಪ್ರಸ್ತುತ ಸರಣಿ'
-export const BEST_STREAK_TEXT = 'ಅತ್ಯುತ್ತಮ ಸ್ಟ್ರೀಕ್'
+export const BEST_STREAK_TEXT = 'ಅತ್ಯುತ್ತಮ ಸರಣಿ'

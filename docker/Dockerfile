@@ -1,4 +1,4 @@
-FROM node:16.14.0-alpine3.14 AS node_modules
+FROM --platform=linux/amd64 node:16.14.0-alpine3.14 AS node_modules
 WORKDIR /app
 COPY package-lock.json package.json ./
 RUN npm install
@@ -8,7 +8,7 @@ FROM node_modules AS prod_builder
 RUN npm run build
 
 ## Production image
-FROM nginx:1.20.2-alpine AS prod
+FROM --platform=linux/amd64 nginx:1.20.2-alpine AS prod
 COPY docker/etc/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY docker/etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=prod_builder /app/build /usr/share/nginx/html
