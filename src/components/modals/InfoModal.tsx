@@ -49,7 +49,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="ಯ" isRevealing={true} isCompleted={true} status="absent" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        ಯ ಅಕ್ಷರವು ಯಾವುದೇ ಸ್ಥಳದಲ್ಲಿ ಪದದಲ್ಲಿಲ್ಲ.
+        ಯ ಅಕ್ಷರವು ಪದದಲ್ಲಿಲ್ಲ.
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
