@@ -35,12 +35,14 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           isRevealing={true}
           isCompleted={true}
           value="ರ"
-          status={{ status: 'present', actual: '' }}
+          status={{ status: 'present', actual: 'ರೂ' }}
         />
         <Cell value="ತ" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        ರ ಅಕ್ಷರವು ಪದದಲ್ಲಿದೆ ಆದರೆ ತಪ್ಪಾದ ಸ್ಥಳದಲ್ಲಿದೆ.
+        ರ ಅಕ್ಷರವು ಪದದಲ್ಲಿದೆ ಆದರೆ ತಪ್ಪಾದ ಸ್ಥಳದಲ್ಲಿದೆ. ಊಹಿಸಿದ ಅಕ್ಷರ ಒತ್ತಕ್ಷರ
+        ಸಹಿತವಾಗಬೇಕಾದ್ದಲ್ಲಿ, ಅದನ್ನು ಚೌಕದ ತಳ ಬಲ ತುದಿಯಲ್ಲಿ ತಿಳಿಸಲಾಗುವುದು. ಇಲ್ಲಿ ರೂ
+        ಬೇಕಾದ ಅಕ್ಷರ.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
