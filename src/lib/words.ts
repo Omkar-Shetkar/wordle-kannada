@@ -5,10 +5,14 @@ import { getGuessStatuses } from './statuses'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
 
 export const isWordInWordList = (word: string) => {
-  return (
-    WORDS.includes(localeAwareLowerCase(word)) ||
-    VALID_GUESSES.includes(localeAwareLowerCase(word))
-  )
+  return containsWord(WORDS, word) || containsWord(VALID_GUESSES, word)
+}
+
+function containsWord(words: string[], search: string) {
+  words.filter((w, i) => {
+    return w === search
+  })
+  return true
 }
 
 export const isWinningWord = (word: string) => {
@@ -30,10 +34,10 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
   const splitGuess = unicodeSplit(guess)
 
   for (let i = 0; i < splitGuess.length; i++) {
-    if (statuses[i] === 'correct' || statuses[i] === 'present') {
+    if (statuses[i].status === 'correct' || statuses[i].status === 'present') {
       lettersLeftArray.push(splitGuess[i])
     }
-    if (statuses[i] === 'correct' && splitWord[i] !== splitGuess[i]) {
+    if (statuses[i].status === 'correct' && splitWord[i] !== splitGuess[i]) {
       return WRONG_SPOT_MESSAGE(splitGuess[i], i + 1)
     }
   }
