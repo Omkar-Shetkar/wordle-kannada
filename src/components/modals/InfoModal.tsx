@@ -20,7 +20,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           isRevealing={true}
           isCompleted={true}
           value="ವಂ"
-          status="correct"
+          status={{ status: 'correct', actual: '' }}
         />
         <Cell value="ದ" />
         <Cell value="ನೆ" />
@@ -35,18 +35,25 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           isRevealing={true}
           isCompleted={true}
           value="ರ"
-          status="present"
+          status={{ status: 'present', actual: 'ರೂ' }}
         />
         <Cell value="ತ" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        ರ ಅಕ್ಷರವು ಪದದಲ್ಲಿದೆ ಆದರೆ ತಪ್ಪಾದ ಸ್ಥಳದಲ್ಲಿದೆ.
+        ರ ಅಕ್ಷರವು ಪದದಲ್ಲಿದೆ ಆದರೆ ತಪ್ಪಾದ ಸ್ಥಳದಲ್ಲಿದೆ. ಊಹಿಸಿದ ಅಕ್ಷರ ಒತ್ತಕ್ಷರ
+        ಸಹಿತವಾಗಬೇಕಾದ್ದಲ್ಲಿ, ಅದನ್ನು ಚೌಕದ ತಳ ಬಲ ತುದಿಯಲ್ಲಿ ತಿಳಿಸಲಾಗುವುದು. ಇಲ್ಲಿ ರೂ
+        ಬೇಕಾದ ಅಕ್ಷರ.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="ಗೆ" />
         <Cell value="ಳೆ" />
-        <Cell value="ಯ" isRevealing={true} isCompleted={true} status="absent" />
+        <Cell
+          value="ಯ"
+          isRevealing={true}
+          isCompleted={true}
+          status={{ status: 'absent', actual: '' }}
+        />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         ಯ ಅಕ್ಷರವು ಪದದಲ್ಲಿಲ್ಲ.
