@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="ಆಟದ ನಿಯಮಗಳು" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        ಎಂಟು ಪ್ರಯತ್ನಗಳಲ್ಲಿ ಪದವನ್ನು ಊಹಿಸಿ. ಪ್ರತಿ ಊಹೆಯ ನಂತರ, ಚೌಕದ ಬಣ್ಣವು
+        ಆರು ಪ್ರಯತ್ನಗಳಲ್ಲಿ ಪದವನ್ನು ಊಹಿಸಿ. ಪ್ರತಿ ಊಹೆಯ ನಂತರ, ಚೌಕದ ಬಣ್ಣವು
         ಬದಲಾಯಿಸುತ್ತದೆ. ಚೌಕದ ಬಣ್ಣ, ಪದಕ್ಕೆ ನಿಮ್ಮ ಊಹೆ ಎಷ್ಟು ಹತ್ತಿರವಾಗಿತ್ತು
         ಎಂಬುದನ್ನು ತೋರಿಸಲು ಸಹಾಯಕ.
       </p>
