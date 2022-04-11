@@ -63,7 +63,7 @@ export const getGuessStatuses = (guess: string): Status[] => {
       (x, index) => x === letter || x.charCodeAt(0) === letter.charCodeAt(0)
     )
 
-    if (index == -1) {
+    if (index === -1) {
       // handles the absent case
       statuses[i] = { status: 'absent', actual: '' }
       return

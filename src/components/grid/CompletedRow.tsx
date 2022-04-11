@@ -1,6 +1,6 @@
 import { getGuessStatuses } from '../../lib/statuses'
 import { Cell } from './Cell'
-import { solution, unicodeSplit } from '../../lib/words'
+import { unicodeSplit } from '../../lib/words'
 
 type Props = {
   guess: string
