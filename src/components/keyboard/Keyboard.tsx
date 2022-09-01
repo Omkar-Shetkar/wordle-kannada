@@ -203,7 +203,7 @@ export const Keyboard = ({
             ))}
           </div>
           <div className="flex justify-center mb-1">
-            {gunitakshara.slice(11).map((key) => (
+            {gunitakshara.slice(10).map((key) => (
               <Key
                 value={key}
                 key={key}
